@@ -22,30 +22,25 @@
 
 (1)打开终端,输入:
 
-cd /usr/local/bin
-`</pre>
+`cd /usr/local/bin`
 
 如果电脑不存在这个目录，那么创建一个:
 
-<pre>`sudo mkdir bin
-`</pre>
+`sudo mkdir bin`
 
 创建完成后再使用cd命令看看。
 
 (2)打开终端，使用cd命令定位到apktool文件夹:
 
-<pre>`cd Desktop/apktool/
-`</pre>
+`cd Desktop/apktool/`
 
 使用cp命令把apktool.jar和apktool文件拷贝到/usr/local/bin
 
-<pre>`sudo cp apktool.jar apktool /usr/local/bin
-`</pre>
+`sudo cp apktool.jar apktool /usr/local/bin`
 
 之后,使用
 
-<pre>`sudo apktool
-`</pre>
+`sudo apktool`
 
 可以查看apktool的版本
 
@@ -53,13 +48,11 @@ cd /usr/local/bin
 
 把apk文件放到apktool文件夹,然后回到apktool文件夹下:
 
-<pre>`cd /Desktop/apktool/
-`</pre>
+`cd /Desktop/apktool/`
 
 使用(xxx.apk是你的apk名字)
 
-<pre>`apktool d xxx.apk
-`</pre>
+`apktool d xxx.apk`
 
 就能进行反编译了。对于系统apk，需要额外导入框架才能反编译。更多apktool命令可以自行百度Google。
 
@@ -73,12 +66,11 @@ cd /usr/local/bin
 
 (4)定位到dex2jar文件夹(不同版本的dex2jar文件名不同,请作相应替换):
 
-<pre>`cd Desktop/apktool/dex2jar-0.0.9.15/
-`</pre>
+`cd Desktop/apktool/dex2jar-0.0.9.15/`
 
 执行命令:
 
-<pre>`sh dex2jar.sh classes.dex
+`sh dex2jar.sh classes.dex`
 
 这时会在dex2jar文件夹下生成一个classes_dex2jar.jar文件。
 
